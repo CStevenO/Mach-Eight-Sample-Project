@@ -16,7 +16,7 @@ def pairs(z:int)->None:
     h_max = int(df['h_in'].max())
     #there are no matches when z>2*h_max and z<2*h_min
     if(h_min*2<=z and  h_max*2>=z):
-        #find heights pairs which x+y=z where x and y are the player's heights and z is our target
+        #find heights pairs which x+y=z where x and y are the players heights and z is our target
         for x in range(h_max,ceil(z/2)-1,-1):
             y = -x + z
             #if our y found is < than h_min that height does not exist and go to the next iterator
